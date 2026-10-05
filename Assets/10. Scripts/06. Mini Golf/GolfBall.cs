@@ -13,7 +13,9 @@ namespace Study3D.MiniGolf
         // 공을 다이나믹으로 사용하기 때문에 게임적 표현을
         // 회전 스피드에 제한을 활용하여 간접적으로 제어 합니다.
         public float maxAngularSpeed = 150f;
-
+        public float hopRatio = 0.3f; // 파워 대비 위쪽 속도 비율 (0이면 점프 없음)
+        
+        
         private Rigidbody rBody;
         private Vector3 lastPosition; // 유저가 마지막으로 공을 건드린 위치
         private Vector3 shotVelocity; // 공의 방향 * 세기가 연산되는 변수
@@ -49,7 +51,7 @@ namespace Study3D.MiniGolf
         public void Shoot(Vector3 direction, float power)
         {
             shotRequested = true;
-            shotVelocity = direction * power;
+            shotVelocity = direction * power + Vector3.up * (power * hopRatio);
             lastPosition = transform.position;
         }
 
@@ -63,7 +65,7 @@ namespace Study3D.MiniGolf
             rBody.angularVelocity = Vector3.zero;
             
             // 공을 물리를 처리하는 개체이므로
-            // transform과 리지드 바디의 position을 모두 변경해줍니다.
+            // transform과 리지드 바디의 position을 모두 z`변경해줍니다.
             // (Interpolate를 사용하는 Rigidbody는 transform도 함께 옮겨야
             // 끌려오듯이 안보일 거입니다.)
             rBody.position = position;

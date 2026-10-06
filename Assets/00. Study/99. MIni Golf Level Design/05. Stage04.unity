@@ -337,7 +337,6 @@ Transform:
   - {fileID: 1825808266}
   - {fileID: 254797161}
   - {fileID: 1905613551}
-  - {fileID: 90892262}
   m_Father: {fileID: 425432932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &84335337
@@ -429,33 +428,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &90892258 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
-  m_PrefabInstance: {fileID: 261237907}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &90892259
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90892258}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dedb8f0bde454984f9e1bbb2b98aa98f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &90892262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
@@ -729,7 +701,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 64756097}
+    m_TransformParent: {fileID: 1659740171}
     m_Modifications:
     - target: {fileID: 100000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
       propertyPath: m_Name
@@ -749,15 +721,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -54.52
+      value: -6.7000046
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1999915
+      value: -3.6200001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.3
+      value: -0.060001373
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -790,10 +762,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 90892259}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f56eea6d15c494e54ac1b03c652ffbc2, type: 3}
 --- !u!1 &325699206
 GameObject:
@@ -3202,6 +3171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 69e4510e52df2ba4fb49e8fccd15d409, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1377c6c3a6a410bbeea9b5ff5fdd79, type: 2}
     - target: {fileID: 919132149155446097, guid: 69e4510e52df2ba4fb49e8fccd15d409, type: 3}
       propertyPath: m_Name
       value: Bridge02
@@ -3548,7 +3521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 472506, guid: fd3721692161d49aab99551679a75895, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.08
+      value: -23.991
       objectReference: {fileID: 0}
     - target: {fileID: 472506, guid: fd3721692161d49aab99551679a75895, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3619,6 +3592,61 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 034828b97af13414998cf79feb53ab3d, type: 3}
+--- !u!1 &1659740169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1659740171}
+  - component: {fileID: 1659740170}
+  m_Layer: 0
+  m_Name: Boat Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1659740170
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659740169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dedb8f0bde454984f9e1bbb2b98aa98f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1659740171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659740169}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -68.68, y: 4.14, z: 36.36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 90892262}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1670470451
 GameObject:
   m_ObjectHideFlags: 0
@@ -4315,6 +4343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 69e4510e52df2ba4fb49e8fccd15d409, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1377c6c3a6a410bbeea9b5ff5fdd79, type: 2}
     - target: {fileID: 919132149155446097, guid: 69e4510e52df2ba4fb49e8fccd15d409, type: 3}
       propertyPath: m_Name
       value: Bridge02
@@ -4650,3 +4682,4 @@ SceneRoots:
   - {fileID: 915929999}
   - {fileID: 638274501}
   - {fileID: 623998679}
+  - {fileID: 1659740171}

@@ -3,13 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class StageZone : MonoBehaviour
 {
-    public string sceneName;
+    public string sceneName = "01. List";
+    public string unlockId;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player")) return;
+
+        if (!string.IsNullOrEmpty(unlockId))
         {
-            SceneManager.LoadScene(sceneName);
+            GameProgress.Unlock(unlockId);
         }
+
+        SceneManager.LoadScene(sceneName);
     }
 }

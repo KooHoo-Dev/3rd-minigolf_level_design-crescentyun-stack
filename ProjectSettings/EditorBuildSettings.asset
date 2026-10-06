@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/00. Study/99. MIni Golf Level Design/00. Main.unity
+    guid: 7e98c7e06d6bf5541ba8f3594f4208d5
+  - enabled: 1
+    path: Assets/00. Study/99. MIni Golf Level Design/01. List.unity
+    guid: 024b2f44fb465f94cab6a638fb94b0ed
+  - enabled: 1
+    path: Assets/00. Study/99. MIni Golf Level Design/02. Stage01.unity
+    guid: 4f6479bf3baa62145a6bfeb61df32654
+  - enabled: 1
+    path: Assets/00. Study/99. MIni Golf Level Design/03. Stage02.unity
+    guid: 2494e8998a7ef134690a43082ba9b234
+  - enabled: 1
+    path: Assets/00. Study/99. MIni Golf Level Design/04. Stage03.unity
+    guid: b5a72a4abfe0f4f47b993e08dd7135af
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

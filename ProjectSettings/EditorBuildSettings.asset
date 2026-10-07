@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00. Study/99. MIni Golf Level Design/04. Stage03.unity
     guid: b5a72a4abfe0f4f47b993e08dd7135af
+  - enabled: 1
+    path: Assets/00. Study/99. MIni Golf Level Design/05. Stage04.unity
+    guid: 83b7bd8882ed6e9469246b28836bd66b
+  - enabled: 1
+    path: Assets/00. Study/99. MIni Golf Level Design/99. Clear.unity
+    guid: cfae43e2b6752e34f8b6cce69b60395e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
